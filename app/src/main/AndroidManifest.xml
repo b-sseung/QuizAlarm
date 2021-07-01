@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.quizalram">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="Android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".main.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".main.Main_Quiz_Title"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".setting.Main_Setting"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".Open_Alarm"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".Toast_Activity_1"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/toast_1"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+
+        <activity android:name=".Create_Alarm"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <receiver android:name=".Alarm_Reciver" />
+
+        <service
+            android:name=".RingtonePlayingService"
+            android:enabled="true"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="org.techtown.quizalram"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8631957304793435~9890328155"/>
+
+    </application>
+
+</manifest>

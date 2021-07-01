@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity"
+    android:gravity="top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/main_top_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8D8D8D"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/main_motify_Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/string2"
+                        android:textStyle="bold"
+                        android:textSize="19dp"/>
+
+                    <TextView
+                        android:id="@+id/text_color_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string1"
+                        android:textSize="23dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/main_add_Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/string3"
+                        android:textStyle="bold"
+                        android:textSize="19dp"/>
+
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/main_base_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </FrameLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/main_quiz_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"/>
+            <FrameLayout
+                android:id="@+id/main_setting_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8631957304793435/7198901423">
+<!--            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">  테스트-->
+
+        </com.google.android.gms.ads.AdView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemTextColor="#FFFFFF"
+            app:itemIconTint="#FFFFFF"
+            app:menu="@menu/bottom_navigation" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/fragment_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow"
+        android:visibility="invisible" />
+
+</FrameLayout>

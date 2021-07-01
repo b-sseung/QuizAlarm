@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Drop Shadow Stack -->
+
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid android:color="#00909090" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid
+                android:color="#0D909090" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid android:color="#1A909090" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid
+                android:color="#26909090" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid
+                android:color="#33909090" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid
+                android:color="#40909090" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid
+                android:color="#4D909090" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid
+                android:color="#59909090" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid
+                android:color="#66909090" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="2.5dp" />
+            <solid
+                android:color="#73909090" />
+        </shape>
+    </item>
+    <!-- Background -->
+    <item>
+        <shape>
+            <corners
+                android:topLeftRadius="15dp"
+                android:topRightRadius="15dp" />
+            <solid
+                android:color="@android:color/white" />
+        </shape>
+    </item>
+</layer-list>

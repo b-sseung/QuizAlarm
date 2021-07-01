@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7E7E7"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/cancel_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/string7"
+            android:textStyle="bold"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/add_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/string3"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#88000000"/>
+
+        <TextView
+            android:id="@+id/modify_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/string56"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="21dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:layout_marginBottom="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/text_color_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/string8"
+                        android:textSize="18dp"
+                        android:textColor="#000000"/>
+
+                    <EditText
+                        android:id="@+id/alarm_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/string9"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        android:paddingRight="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/text_color_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/string10"
+                        android:textSize="18dp"
+                        android:textColor="#000000"/>
+
+                    <Spinner
+                        android:id="@+id/alarm_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="18dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/text_color_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/string11"
+                        android:textSize="18dp"
+                        android:textColor="#000000"/>
+
+                    <CheckBox
+                        android:id="@+id/vibrator_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="ON"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <CheckBox
+                        android:id="@+id/vibrator_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="OFF"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string12"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/dayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/sun_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string13"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+                        <TextView
+                            android:id="@+id/mon_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string14"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+                        <TextView
+                            android:id="@+id/tue_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string15"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+                        <TextView
+                            android:id="@+id/wed_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string16"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+                        <TextView
+                            android:id="@+id/thur_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string17"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+                        <TextView
+                            android:id="@+id/fri_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string18"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+                        <TextView
+                            android:id="@+id/satur_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string19"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string20"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/all_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string21"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+                        <TextView
+                            android:id="@+id/noweekend_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string22"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+                        <TextView
+                            android:id="@+id/weekend_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string23"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroke"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

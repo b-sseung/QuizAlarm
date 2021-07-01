@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/quiz_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#8D8D8D"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/quiz_delete_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/string25"
+            android:textStyle="bold"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:id="@+id/text_color_23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string24"
+            android:textSize="23dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/quiz_add_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/string3"
+            android:textStyle="bold"
+            android:textSize="19dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quiz_base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/quiz_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="right">
+            <TextView
+                android:id="@+id/quiz_group_list_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/string26"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/quiz_group_add_cancle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/string59"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/quiz_group_set_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/string46"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/quiz_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="15dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/check"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"/>
+            <TextView
+                android:id="@+id/quiz_all_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string27"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/quiz_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string25"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/quiz_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string7"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/quiz_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:background="@drawable/stroke"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/string27"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e6e6e6"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/quiz_title_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

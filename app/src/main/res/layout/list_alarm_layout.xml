@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <org.techtown.quizalram.swipelayout.Swipe_Layout
+        android:id="@+id/alarm_swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mode="same_level"
+        app:dragEdge="right">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:id="@+id/alarm_modify_click"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="#a9a9a9"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image2"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/alarm_delete_click"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="#FF0000"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image1"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#00FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="15dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/hour"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:text="07"/>
+                                <TextView
+                                    android:id="@+id/text_color_10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:text=":"/>
+                                <TextView
+                                    android:id="@+id/minute"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:text="22"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:text="알람 이름"
+                                    android:layout_marginRight="20dp"/>
+                                <TextView
+                                    android:id="@+id/repeateDay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textSize="18dp"
+                                    android:text="반복 일자"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <FrameLayout
+                            android:id="@+id/clickLayout"
+                            android:visibility="invisible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+                        <Switch
+                            android:id="@+id/switch2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/minus"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/minus"
+                            android:layout_gravity="center"
+                            android:visibility="invisible"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </org.techtown.quizalram.swipelayout.Swipe_Layout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6E6E6"/>
+</LinearLayout>
